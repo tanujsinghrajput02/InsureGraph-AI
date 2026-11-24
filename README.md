@@ -18,7 +18,7 @@ The project combines **Retrieval-Augmented Generation (RAG), Knowledge Graphs, L
 - **Retrieval-Augmented Generation:** Combines retrieved document evidence and knowledge graph information to answer questions.
 - **Multi-Policy Intelligence:** Compares policies, ranks coverage amounts, and identifies the highest coverage and lowest premium.
 - **LangGraph Workflow:** Implements a structured retrieval, answering, and validation workflow.
-- **Evidence Validation:** Checks generated answers against retrieved document and graph evidence.
+- **Evidence Validation:** Checks answers against retrieved document and graph evidence.
 - **Interactive Dashboard:** Provides a Streamlit interface for asking questions about insurance documents.
 - **Automated Evaluation:** Evaluates the system using a golden dataset of 31 questions.
 - **Local Model Support:** Uses Hugging Face models without requiring paid LLM API calls.
@@ -46,39 +46,29 @@ The project combines **Retrieval-Augmented Generation (RAG), Knowledge Graphs, L
 
 ## 🏗️ System Architecture
 
-```text
-                 Insurance Policy PDFs
-                          |
-                          v
-                 PDF Document Loader
-                          |
-                          v
-                    Text Chunking
-                          |
-              +-----------+-----------+
-              |                       |
-              v                       v
-       Entity Extraction        Text Embeddings
-              |                       |
-              v                       v
-       Knowledge Graph          Vector Search
-              |                       |
-              +-----------+-----------+
-                          |
-                          v
-                     RAG Agent
-                          |
-                          v
-                  LangGraph Workflow
-                          |
-                          v
-                   Answer Validation
-                          |
-                          v
-                  Grounded Response
-                          |
-                          v
-                 Streamlit Dashboard
+The following architecture illustrates the document processing, knowledge graph construction, semantic retrieval, and question-answering workflow.
+
+```mermaid
+flowchart TD
+    A["Insurance Policy PDFs"] --> B["PDF Loader - PyMuPDF"]
+    B --> C["Text Chunking"]
+
+    C --> D["Entity Extraction - Hugging Face"]
+    C --> E["Text Embeddings - MiniLM"]
+
+    D --> F["Knowledge Graph - NetworkX"]
+    E --> G["Vector Search"]
+
+    F --> H["RAG Agent - LangChain"]
+    G --> H
+
+    H --> I["LangGraph Workflow"]
+    I --> J["Evidence Validation"]
+    J --> K["Grounded Answer"]
+    K --> L["Streamlit Dashboard"]
+
+    style A fill:#e1f0ff,stroke:#3973ac
+    style L fill:#e4f5e9,stroke:#39834b
 ```
 
 ---
@@ -126,13 +116,15 @@ All policy information above is synthetic and intended for demonstration and tes
 
 The application supports questions such as:
 
-**Single-Policy Questions**
+### Single-Policy Questions
+
 - What is the coverage amount for Rahul Sharma?
 - What is the annual premium for Priya Verma?
 - Who is the insurer for policy POL-3003?
 - Who is the customer of policy POL-1001?
 
-**Multi-Policy Questions**
+### Multi-Policy Questions
+
 - Which policy has the highest coverage?
 - Which policy has the lowest premium?
 - Rank all policies by coverage.
@@ -165,6 +157,28 @@ The system was tested using a golden dataset containing **31 insurance-related q
 - The local LLM was not loaded during this evaluation because supported questions were answered through deterministic graph-based logic.
 
 **Note:** These results are specific to the current synthetic golden dataset and do not represent guaranteed accuracy on unseen or real-world insurance documents.
+
+---
+
+## 🖥️ Application Screenshots
+
+### 1. Dashboard Overview
+
+The main dashboard provides navigation to document ingestion, insurance questions, knowledge graph exploration, and evaluation.
+
+![InsureGraph AI Dashboard](docs/images/dashboard-home.png)
+
+### 2. Document Ingestion
+
+Upload insurance policy PDFs and process them to extract information and build the searchable knowledge base.
+
+![Document Ingestion](docs/images/document-ingestion.png)
+
+### 3. Insurance Question Answering
+
+Ask questions about insurance policies and receive answers grounded in the knowledge graph, with source information.
+
+![Insurance Question Answering](docs/images/dashboard-answer.png)
 
 ---
 
@@ -268,6 +282,12 @@ InsureGraph-AI/
 │       ├── extraction_golden.json
 │       └── rag_golden.json
 │
+├── docs/
+│   └── images/
+│       ├── dashboard-home.png
+│       ├── document-ingestion.png
+│       └── dashboard-answer.png
+│
 ├── src/
 │   ├── agent/
 │   │   ├── model_manager.py
@@ -328,19 +348,3 @@ Project Repository: [InsureGraph-AI](https://github.com/tanujsinghrajput02/Insur
 ⭐ If you find this project interesting, feel free to explore the repository and its implementation.
 
 **InsureGraph AI — Turning Insurance Documents into Structured, Searchable Intelligence.**
-## 🖥️ Application Screenshots
-
-### 1. Dashboard Overview
-The main dashboard provides navigation to document ingestion, insurance questions, knowledge graph exploration, and evaluation.
-
-![InsureGraph AI Dashboard](docs/images/dashboard-home.png)
-
-### 2. Document Ingestion
-Upload insurance policy PDFs and process them to extract information and build the searchable knowledge base.
-
-![Document Ingestion](docs/images/document-ingestion.png)
-
-### 3. Insurance Question Answering
-Ask questions about insurance policies and receive answers grounded in the knowledge graph, with source information.
-
-![Insurance Question Answering](docs/images/dashboard-answer.png)
