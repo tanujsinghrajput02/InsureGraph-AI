@@ -1,0 +1,1887 @@
+{
+    "total_questions": 31,
+    "answer_accuracy": 1.0,
+    "policy_retrieval_accuracy": 1.0,
+    "evidence_grounding_rate": 1.0,
+    "source_grounded_answer_accuracy": 1.0,
+    "llm_loaded_during_evaluation": false,
+    "results": [
+        {
+            "question": "What is the coverage amount for Rahul Sharma?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The coverage amount is INR 500000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "What is the sum insured for Rahul Sharma?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The coverage amount is INR 500000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "What is Rahul Sharma's annual premium?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The annual premium is INR 15000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "What premium does Rahul Sharma pay?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The annual premium is INR 15000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "Who is the insurer for Rahul Sharma?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The insurer is ABC Insurance.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "Which insurance company issued Rahul Sharma's policy?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The insurer is ABC Insurance.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "Who is the customer of policy POL-1001?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The customer is Rahul Sharma.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "Who is the policyholder of POL-1001?",
+            "expected_policy_ids": [
+                "POL-1001"
+            ],
+            "answer": "The customer is Rahul Sharma.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "What is the coverage amount for Priya Verma?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The coverage amount is INR 800000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "What is the sum insured for Priya Verma?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The coverage amount is INR 800000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "What is Priya Verma's annual premium?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The annual premium is INR 22000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "What premium does Priya Verma pay?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The annual premium is INR 22000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "Who is the insurer for Priya Verma?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The insurer is SecureLife Insurance.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "Which insurance company issued Priya Verma's policy?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The insurer is SecureLife Insurance.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "Who is the customer of policy POL-2002?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The customer is Priya Verma.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "Who is the policyholder of POL-2002?",
+            "expected_policy_ids": [
+                "POL-2002"
+            ],
+            "answer": "The customer is Priya Verma.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-2002"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "What is the coverage amount for Amit Patel?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The coverage amount is INR 650000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "What is the sum insured for Amit Patel?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The coverage amount is INR 650000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "What is Amit Patel's annual premium?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The annual premium is INR 18000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "What premium does Amit Patel pay?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The annual premium is INR 18000.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "Who is the insurer for Amit Patel?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The insurer is National Shield Insurance.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "Which insurance company issued Amit Patel's policy?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The insurer is National Shield Insurance.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "Who is the customer of policy POL-3003?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The customer is Amit Patel.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "Who is the policyholder of POL-3003?",
+            "expected_policy_ids": [
+                "POL-3003"
+            ],
+            "answer": "The customer is Amit Patel.",
+            "answer_source": "knowledge_graph_direct",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "Which policy has the highest coverage?",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Policies ranked by coverage:\n1. POL-2002 - Priya Verma - Coverage: INR 800000\n2. POL-3003 - Amit Patel - Coverage: INR 650000\n3. POL-1001 - Rahul Sharma - Coverage: INR 500000",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "Which policy has the lowest premium?",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Policies ranked by premium:\n1. POL-1001 - Rahul Sharma - Premium: INR 15000\n2. POL-3003 - Amit Patel - Premium: INR 18000\n3. POL-2002 - Priya Verma - Premium: INR 22000",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "Rank all policies by coverage.",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Policies ranked by coverage:\n1. POL-2002 - Priya Verma - Coverage: INR 800000\n2. POL-3003 - Amit Patel - Coverage: INR 650000\n3. POL-1001 - Rahul Sharma - Coverage: INR 500000",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        },
+        {
+            "question": "Rank all policies by premium.",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Policies ranked by premium:\n1. POL-2002 - Priya Verma - Premium: INR 22000\n2. POL-3003 - Amit Patel - Premium: INR 18000\n3. POL-1001 - Rahul Sharma - Premium: INR 15000",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                }
+            ]
+        },
+        {
+            "question": "Compare all policies.",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Verified policy details:\nPOL-2002 | Customer: Priya Verma | Insurer: SecureLife Insurance | Premium: INR 22000 | Coverage: INR 800000\nPOL-3003 | Customer: Amit Patel | Insurer: National Shield Insurance | Premium: INR 18000 | Coverage: INR 650000\nPOL-1001 | Customer: Rahul Sharma | Insurer: ABC Insurance | Premium: INR 15000 | Coverage: INR 500000",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "List all insurance providers.",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Insurance providers: ABC Insurance, National Shield Insurance, SecureLife Insurance",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                }
+            ]
+        },
+        {
+            "question": "List all customers.",
+            "expected_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "answer": "Customers: Amit Patel, Priya Verma, Rahul Sharma",
+            "answer_source": "knowledge_graph_multi_policy",
+            "answer_correct": true,
+            "policy_retrieval_correct": true,
+            "evidence_grounded": true,
+            "source_grounded_answer": true,
+            "retrieved_policy_ids": [
+                "POL-1001",
+                "POL-2002",
+                "POL-3003"
+            ],
+            "sources": [
+                {
+                    "source": "sample_policy.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_3.pdf",
+                    "page": 1
+                },
+                {
+                    "source": "sample_policy_2.pdf",
+                    "page": 1
+                }
+            ],
+            "graph_evidence": [
+                {
+                    "source": "POL-1001",
+                    "target": "ABC Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-1001 | Insurer: ABC Insurance"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 15000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-1001 | Annual Premium: INR 15000"
+                },
+                {
+                    "source": "POL-1001",
+                    "target": "INR 500000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-1001 | Coverage Amount: INR 500000"
+                },
+                {
+                    "source": "Rahul Sharma",
+                    "target": "POL-1001",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Rahul Sharma | Policy Number: POL-1001"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "National Shield Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-3003 | Insurer: National Shield Insurance"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 18000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-3003 | Annual Premium: INR 18000"
+                },
+                {
+                    "source": "POL-3003",
+                    "target": "INR 650000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-3003 | Coverage Amount: INR 650000"
+                },
+                {
+                    "source": "Amit Patel",
+                    "target": "POL-3003",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Amit Patel | Policy Number: POL-3003"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "SecureLife Insurance",
+                    "relation": "ISSUED_BY",
+                    "evidence": "Policy Number: POL-2002 | Insurer: SecureLife Insurance"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 22000",
+                    "relation": "HAS_PREMIUM",
+                    "evidence": "Policy Number: POL-2002 | Annual Premium: INR 22000"
+                },
+                {
+                    "source": "POL-2002",
+                    "target": "INR 800000",
+                    "relation": "HAS_COVERAGE",
+                    "evidence": "Policy Number: POL-2002 | Coverage Amount: INR 800000"
+                },
+                {
+                    "source": "Priya Verma",
+                    "target": "POL-2002",
+                    "relation": "OWNS",
+                    "evidence": "Customer Name: Priya Verma | Policy Number: POL-2002"
+                }
+            ]
+        }
+    ]
+}

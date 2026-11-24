@@ -1,0 +1,31 @@
+{
+  "entities": [
+    {"name": "Rahul Sharma", "entity_type": "Customer"},
+    {"name": "POL-1001", "entity_type": "Policy"},
+    {"name": "ABC Insurance", "entity_type": "Insurer"},
+    {"name": "INR 15000", "entity_type": "Premium"},
+    {"name": "INR 500000", "entity_type": "Coverage"}
+  ],
+  "relationships": [
+    {
+      "source": "Rahul Sharma",
+      "relation": "OWNS",
+      "target": "POL-1001"
+    },
+    {
+      "source": "POL-1001",
+      "relation": "ISSUED_BY",
+      "target": "ABC Insurance"
+    },
+    {
+      "source": "POL-1001",
+      "relation": "HAS_PREMIUM",
+      "target": "INR 15000"
+    },
+    {
+      "source": "POL-1001",
+      "relation": "HAS_COVERAGE",
+      "target": "INR 500000"
+    }
+  ]
+}

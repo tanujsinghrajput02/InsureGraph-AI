@@ -1,0 +1,194 @@
+
+[
+  {
+    "question": "What is the coverage amount for Rahul Sharma?",
+    "expected_answer_terms": ["INR 500000"],
+    "required_evidence_terms": ["INR 500000"]
+  },
+  {
+    "question": "What is the sum insured for Rahul Sharma?",
+    "expected_answer_terms": ["INR 500000"],
+    "required_evidence_terms": ["INR 500000"]
+  },
+  {
+    "question": "What is Rahul Sharma's annual premium?",
+    "expected_answer_terms": ["INR 15000"],
+    "required_evidence_terms": ["INR 15000"]
+  },
+  {
+    "question": "What premium does Rahul Sharma pay?",
+    "expected_answer_terms": ["INR 15000"],
+    "required_evidence_terms": ["INR 15000"]
+  },
+  {
+    "question": "Who is the insurer for Rahul Sharma?",
+    "expected_answer_terms": ["ABC Insurance"],
+    "required_evidence_terms": ["ABC Insurance"]
+  },
+  {
+    "question": "Which insurance company issued Rahul Sharma's policy?",
+    "expected_answer_terms": ["ABC Insurance"],
+    "required_evidence_terms": ["ABC Insurance"]
+  },
+  {
+    "question": "Who is the customer of policy POL-1001?",
+    "expected_answer_terms": ["Rahul Sharma"],
+    "required_evidence_terms": ["Rahul Sharma"]
+  },
+  {
+    "question": "Who is the policyholder of POL-1001?",
+    "expected_answer_terms": ["Rahul Sharma"],
+    "required_evidence_terms": ["Rahul Sharma"]
+  },
+  {
+    "question": "What is the coverage amount for Priya Verma?",
+    "expected_answer_terms": ["INR 800000"],
+    "required_evidence_terms": ["INR 800000"]
+  },
+  {
+    "question": "What is the sum insured for Priya Verma?",
+    "expected_answer_terms": ["INR 800000"],
+    "required_evidence_terms": ["INR 800000"]
+  },
+  {
+    "question": "What is Priya Verma's annual premium?",
+    "expected_answer_terms": ["INR 22000"],
+    "required_evidence_terms": ["INR 22000"]
+  },
+  {
+    "question": "What premium does Priya Verma pay?",
+    "expected_answer_terms": ["INR 22000"],
+    "required_evidence_terms": ["INR 22000"]
+  },
+  {
+    "question": "Who is the insurer for Priya Verma?",
+    "expected_answer_terms": ["SecureLife Insurance"],
+    "required_evidence_terms": ["SecureLife Insurance"]
+  },
+  {
+    "question": "Which insurance company issued Priya Verma's policy?",
+    "expected_answer_terms": ["SecureLife Insurance"],
+    "required_evidence_terms": ["SecureLife Insurance"]
+  },
+  {
+    "question": "Who is the customer of policy POL-2002?",
+    "expected_answer_terms": ["Priya Verma"],
+    "required_evidence_terms": ["Priya Verma"]
+  },
+  {
+    "question": "Who is the policyholder of POL-2002?",
+    "expected_answer_terms": ["Priya Verma"],
+    "required_evidence_terms": ["Priya Verma"]
+  },
+  {
+    "question": "What is the coverage amount for Amit Patel?",
+    "expected_answer_terms": ["INR 650000"],
+    "required_evidence_terms": ["INR 650000"]
+  },
+  {
+    "question": "What is the sum insured for Amit Patel?",
+    "expected_answer_terms": ["INR 650000"],
+    "required_evidence_terms": ["INR 650000"]
+  },
+  {
+    "question": "What is Amit Patel's annual premium?",
+    "expected_answer_terms": ["INR 18000"],
+    "required_evidence_terms": ["INR 18000"]
+  },
+  {
+    "question": "What premium does Amit Patel pay?",
+    "expected_answer_terms": ["INR 18000"],
+    "required_evidence_terms": ["INR 18000"]
+  },
+  {
+    "question": "Who is the insurer for Amit Patel?",
+    "expected_answer_terms": ["National Shield Insurance"],
+    "required_evidence_terms": ["National Shield Insurance"]
+  },
+  {
+    "question": "Which insurance company issued Amit Patel's policy?",
+    "expected_answer_terms": ["National Shield Insurance"],
+    "required_evidence_terms": ["National Shield Insurance"]
+  },
+  {
+    "question": "Who is the customer of policy POL-3003?",
+    "expected_answer_terms": ["Amit Patel"],
+    "required_evidence_terms": ["Amit Patel"]
+  },
+  {
+    "question": "Who is the policyholder of POL-3003?",
+    "expected_answer_terms": ["Amit Patel"],
+    "required_evidence_terms": ["Amit Patel"]
+  },
+  {
+    "question": "Which policy has the highest coverage?",
+    "expected_answer_terms": ["POL-2002", "Priya Verma", "INR 800000"],
+    "required_evidence_terms": ["POL-2002", "Priya Verma", "INR 800000"]
+  },
+  {
+    "question": "Which policy has the lowest premium?",
+    "expected_answer_terms": ["POL-1001", "Rahul Sharma", "INR 15000"],
+    "required_evidence_terms": ["POL-1001", "Rahul Sharma", "INR 15000"]
+  },
+  {
+    "question": "Rank all policies by coverage.",
+    "expected_answer_terms": [
+      "POL-2002", "POL-3003", "POL-1001",
+      "INR 800000", "INR 650000", "INR 500000"
+    ],
+    "required_evidence_terms": [
+      "POL-2002", "POL-3003", "POL-1001",
+      "INR 800000", "INR 650000", "INR 500000"
+    ]
+  },
+  {
+    "question": "Rank all policies by premium.",
+    "expected_answer_terms": [
+      "POL-2002", "POL-3003", "POL-1001",
+      "INR 22000", "INR 18000", "INR 15000"
+    ],
+    "required_evidence_terms": [
+      "POL-2002", "POL-3003", "POL-1001",
+      "INR 22000", "INR 18000", "INR 15000"
+    ]
+  },
+  {
+    "question": "Compare all policies.",
+    "expected_answer_terms": [
+      "POL-1001", "POL-2002", "POL-3003",
+      "Rahul Sharma", "Priya Verma", "Amit Patel",
+      "ABC Insurance", "SecureLife Insurance",
+      "National Shield Insurance"
+    ],
+    "required_evidence_terms": [
+      "INR 15000", "INR 22000", "INR 18000",
+      "INR 500000", "INR 800000", "INR 650000"
+    ]
+  },
+  {
+    "question": "List all insurance providers.",
+    "expected_answer_terms": [
+      "ABC Insurance",
+      "SecureLife Insurance",
+      "National Shield Insurance"
+    ],
+    "required_evidence_terms": [
+      "ABC Insurance",
+      "SecureLife Insurance",
+      "National Shield Insurance"
+    ]
+  },
+  {
+    "question": "List all customers.",
+    "expected_answer_terms": [
+      "Rahul Sharma",
+      "Priya Verma",
+      "Amit Patel"
+    ],
+    "required_evidence_terms": [
+      "Rahul Sharma",
+      "Priya Verma",
+      "Amit Patel"
+    ]
+  }
+]
