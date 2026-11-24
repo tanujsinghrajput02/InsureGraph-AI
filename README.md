@@ -328,3 +328,19 @@ Project Repository: [InsureGraph-AI](https://github.com/tanujsinghrajput02/Insur
 ⭐ If you find this project interesting, feel free to explore the repository and its implementation.
 
 **InsureGraph AI — Turning Insurance Documents into Structured, Searchable Intelligence.**
+## 🖥️ Application Screenshots
+
+### 1. Dashboard Overview
+The main dashboard provides navigation to document ingestion, insurance questions, knowledge graph exploration, and evaluation.
+
+![InsureGraph AI Dashboard](docs/images/dashboard-home.png)
+
+### 2. Document Ingestion
+Upload insurance policy PDFs and process them to extract information and build the searchable knowledge base.
+
+![Document Ingestion](docs/images/document-ingestion.png)
+
+### 3. Insurance Question Answering
+Ask questions about insurance policies and receive answers grounded in the knowledge graph, with source information.
+
+![Insurance Question Answering](docs/images/dashboard-answer.png)
